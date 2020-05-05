@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+    <input
+    type="text"
+    class="form-control"
+    #serverNameInput>
+    <label>Server Content</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <input
+    type="text"
+    class="form-control"
+    #serverContentInput>
+
+    <p>please do remember to note that there are two methods of passing local references from the dom back to the logic side ts file. the first is to parameter pass in a file ass seen on line 19 and the second is to use a view child () decorator to jquery select your way to the dom direlcty upon activation of the function itwself without having to parameter pass</p>
+    <br>
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer(serverNameInput)">Add Server</button>
+    <button
+      class="btn btn-primary"
+      (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+  </div>
+  <p>references only usable inside the template only
+  the question of how to tap  or use a local reference from a ts code file?
+elementref type versus htmlinput type via direct paramater passing or passing using view child decorator tool
+element ref type has important property called native propety very usefule
+<br>
+ng content is a special html selector tag that allows for content to be projected from superior level component templates
+
+</p>
+</div>

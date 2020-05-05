@@ -1,0 +1,19 @@
+<div
+  class="panel panel-default">
+  <div class="panel-heading"
+  #heading>{{ name }}</div>
+  <div class="panel-body">
+    <ng-content></ng-content>
+    <p>will hook the value of anything in between the componetn selector being called in the superior template compnonetn</p>
+  </div>
+</div>
+<p>what is ngOnInit: called once on componenet being initialized
+what is ngONChanges: called after a bound input property changes
+  ngDoCheck: called during every change detection run
+  ngAfter ContentInit(): called arfter content ng-content has been projected into view
+  what is ngaftercontentchecked: called every time after content has been checked
+  what is ngafterviewinit: CALLED AFTER THE Components view and child views have been initialized
+
+  ngafterviewchecked: called every time the view has been checked
+  what is ng on destroy: called once the component is about to be destroyed removed from the dom
+</p>
